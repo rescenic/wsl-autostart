@@ -30,9 +30,16 @@ git clone https://github.com/troytse/wsl-autostart
 e.g:
 ``` sudoers
 %sudo ALL=NOPASSWD: /etc/init.d/cron
-%sudo ALL=NOPASSWD: /etc/init.d/ssh
-%sudo ALL=NOPASSWD: /etc/init.d/mysql
-%sudo ALL=NOPASSWD: /etc/init.d/apache2
+#%sudo ALL=NOPASSWD: /etc/init.d/ssh
+#%sudo ALL=NOPASSWD: /etc/init.d/mysql
+#%sudo ALL=NOPASSWD: /etc/init.d/apache2
+
+%wheel ALL=NOPASSWD: /etc/init.d/cron
+#%wheel ALL=NOPASSWD: /etc/init.d/ssh
+#%wheel ALL=NOPASSWD: /etc/init.d/mysql
+#%wheel ALL=NOPASSWD: /etc/init.d/apache2
+
+https://support.hostway.com/hc/en-us/articles/115001509750-How-To-Install-and-Configure-Sudo
 ```
 * Modify `commands.txt` in the wsl-autostart directory to specify the service commands for your need.
 e.g:
