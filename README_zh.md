@@ -30,9 +30,16 @@ git clone https://github.com/rescenic/wsl-autostart.git
 如:
 ``` sudoers
 %sudo ALL=NOPASSWD: /etc/init.d/cron
-%sudo ALL=NOPASSWD: /etc/init.d/ssh
-%sudo ALL=NOPASSWD: /etc/init.d/mysql
-%sudo ALL=NOPASSWD: /etc/init.d/apache2
+#%sudo ALL=NOPASSWD: /etc/init.d/ssh
+#%sudo ALL=NOPASSWD: /etc/init.d/mysql
+#%sudo ALL=NOPASSWD: /etc/init.d/apache2
+
+%wheel ALL=NOPASSWD: /etc/init.d/cron
+#%wheel ALL=NOPASSWD: /etc/init.d/ssh
+#%wheel ALL=NOPASSWD: /etc/init.d/mysql
+#%wheel ALL=NOPASSWD: /etc/init.d/apache2
+
+https://support.hostway.com/hc/en-us/articles/115001509750-How-To-Install-and-Configure-Sudo
 ```
 * 修改`commands.txt`文件指定需要自启动的服务.
 如:
