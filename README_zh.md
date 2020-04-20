@@ -12,7 +12,7 @@
 
 * 使用 git clone 到任意目录 (e.g `C:\wsl-autostart`)
 ``` shell
-git clone https://github.com/troytse/wsl-autostart
+git clone https://github.com/rescenic/wsl-autostart.git
 ```
 
 * 在注册表中加入启动项

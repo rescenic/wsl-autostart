@@ -12,7 +12,7 @@ Support for starting the Linux services in Windows Subsystem for Linux (WSL) on 
 
 * Clone to any directory using the git command: (e.g `C:\wsl-autostart`)
 ``` shell
-git clone https://github.com/troytse/wsl-autostart
+git clone https://github.com/rescenic/wsl-autostart.git
 ```
 
 * Add a startup item to the registry.
