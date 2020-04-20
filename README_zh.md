@@ -12,16 +12,16 @@
 
 * 使用 git clone 到任意目录 (e.g `C:\wsl-autostart`)
 ``` shell
-git clone https://github.com/troytse/wsl-autostart
+git clone https://github.com/rescenic/wsl-autostart.git
 ```
 
-* 在注册表中加入启动项
+* 在注册表中加入启动项 <br/>
 ![run-regedit](doc/run-regedit.png)
 
-* 在`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`下新增字符串项目 (e.g `WSLAutostart`)
+* 在`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`下新增字符串项目 (e.g `WSLAutostart`) <br/>
 ![regedit-new-item](doc/regedit-new-item.png)
 
-* 设定脚本的路径 (e.g `C:\wsl-autostart\start.vbs`)
+* 设定脚本的路径 (e.g `C:\wsl-autostart\start.vbs`) <br/>
 ![regedit-set-path](doc/regedit-set-path.png)
 
 ## 使用

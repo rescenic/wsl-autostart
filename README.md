@@ -12,16 +12,16 @@ Support for starting the Linux services in Windows Subsystem for Linux (WSL) on 
 
 * Clone to any directory using the git command: (e.g `C:\wsl-autostart`)
 ``` shell
-git clone https://github.com/troytse/wsl-autostart
+git clone https://github.com/rescenic/wsl-autostart.git
 ```
 
-* Add a startup item to the registry.
+* Add a startup item to the registry.<br/>
 ![run-regedit](doc/run-regedit.png)
 
-* Add a string item under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run` (e.g `WSLAutostart`)
+* Add a string item under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run` (e.g `WSLAutostart`) <br/>
 ![regedit-new-item](doc/regedit-new-item.png)
 
-* Set the path to the script (e.g `C:\wsl-autostart\start.vbs`)
+* Set the path to the script (e.g `C:\wsl-autostart\start.vbs`) <br/>
 ![regedit-set-path](doc/regedit-set-path.png)
 
 ## Usage
