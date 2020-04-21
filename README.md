@@ -1,5 +1,8 @@
 # WSL Autostart
-Support for starting the Linux services in Windows Subsystem for Linux (WSL) on Windows startup.
+Support for starting the Linux services in Windows Subsystem for Linux (WSL) on Windows startup. <br/>
+Additional features included:  Running `Ubuntu`, `Debian`, `Kali Linux` on Windows startup. See `control.bat`. <br/>
+For example, I set SSH Port for `Ubuntu 401`, `Debian 403`, and `Kali Linux 404`.<br/>
+![ssh-test](doc/ssh-test.png)
 
 [README](README.md) | [中文文档](README_zh.md)
 

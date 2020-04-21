@@ -1,5 +1,9 @@
 # WSL 服务自启动脚本
-支持在Windows启动时启动WSL中的Linux服务.
+支持在Windows启动时启动WSL中的Linux服务.<br/>
+其他功能包括：在Windows启动时运行“ Ubuntu”，“ Debian”和“ Kali Linux”。 参见`control.bat`。<br/>
+例如，我为“ Ubuntu 401”，“ Debian 403”和“ Kali Linux 404”设置了SSH端口。<br/>
+![ssh-test](doc/ssh-test.png)
+
 
 [README](README.md) | [中文文档](README_zh.md)
 

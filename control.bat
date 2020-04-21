@@ -31,6 +31,8 @@ goto lxssDetect
 
     REM Start services in the WSL
     REM Define the service commands in commands.txt.
-    for /f %%i in (%~dp0commands.txt) do (wsl sudo %%i %*)
+    for /f %%i in (%~dp0commands.txt) do (wsl -d Ubuntu sudo %%i %*)
+    for /f %%i in (%~dp0commands.txt) do (wsl -d Debian sudo %%i %*)
+    for /f %%i in (%~dp0commands.txt) do (wsl -d kali-linux sudo %%i %*)
 
 :end
