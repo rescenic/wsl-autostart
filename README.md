@@ -30,12 +30,12 @@ git clone https://github.com/rescenic/wsl-autostart.git
 e.g:
 ``` sudoers
 %sudo ALL=NOPASSWD: /etc/init.d/cron
-#%sudo ALL=NOPASSWD: /etc/init.d/ssh
+%sudo ALL=NOPASSWD: /etc/init.d/ssh
 #%sudo ALL=NOPASSWD: /etc/init.d/mysql
 #%sudo ALL=NOPASSWD: /etc/init.d/apache2
 
 %wheel ALL=NOPASSWD: /etc/init.d/cron
-#%wheel ALL=NOPASSWD: /etc/init.d/ssh
+%wheel ALL=NOPASSWD: /etc/init.d/ssh
 #%wheel ALL=NOPASSWD: /etc/init.d/mysql
 #%wheel ALL=NOPASSWD: /etc/init.d/apache2
 
@@ -46,8 +46,8 @@ e.g:
 ``` shell
 /etc/init.d/cron
 /etc/init.d/ssh
-/etc/init.d/mysql
-/etc/init.d/apache2
+#/etc/init.d/mysql
+#/etc/init.d/apache2
 ```
 
 ## Other methods
@@ -55,4 +55,9 @@ e.g:
   > Note that the configured program will run as the system user.
 * Using `taskschd.msc`, it is possible to schedule a task after the startup of the computer.
   > You may configure which user will run the program, a delay before a run and a number of retries.
-the same `taskschd.msc` program will show a specific log regarding the execution of the task
+The same `taskschd.msc` program will show a specific log regarding the execution of the task
+
+## Further reading: Install SSH on WSL
+* https://superuser.com/questions/1111591/how-can-i-ssh-into-bash-on-ubuntu-on-windows-10
+* https://gist.github.com/dentechy/de2be62b55cfd234681921d5a8b6be11
+* https://gist.github.com/harleyday/76a103a1a0ca97c6f33706e4a8cc3307#file-wsl-ssh-server-md
