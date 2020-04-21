@@ -51,11 +51,11 @@ https://support.hostway.com/hc/en-us/articles/115001509750-How-To-Install-and-Co
 ```
 
 ## 其他方法
-* 使用“ gpedit.msc”，可以定义在计算机启动时运行的程序。
+* 使用 `gpedit.msc`，可以定义在计算机启动时运行的程序。
   > 请注意，配置的程序将以系统用户身份运行。
-* 使用`taskschd.msc`，可以在计算机启动后安排任务。
+* 使用 `taskschd.msc`，可以在计算机启动后安排任务。
   > 您可以配置哪个用户将运行该程序，运行前的延迟以及重试次数。
-相同的`taskschd.msc`程序将显示有关任务执行的特定日志
+相同的 `taskschd.msc` 程序将显示有关任务执行的特定日志
 
 ## Further reading: Install 'SSH' on 'WSL'
 * https://superuser.com/questions/1111591/how-can-i-ssh-into-bash-on-ubuntu-on-windows-10
