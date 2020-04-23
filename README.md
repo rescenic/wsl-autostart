@@ -32,25 +32,25 @@ git clone https://github.com/rescenic/wsl-autostart.git
 * Modify `/etc/sudoers` in the WSL to specify the service commands calling on startup without a password.
 e.g:
 ``` sudoers
+(Ubuntu, Debian, Kali Linux WSL)
 %sudo ALL=NOPASSWD: /etc/init.d/cron
 %sudo ALL=NOPASSWD: /etc/init.d/ssh
-#%sudo ALL=NOPASSWD: /etc/init.d/mysql
-#%sudo ALL=NOPASSWD: /etc/init.d/apache2
 
-%wheel ALL=NOPASSWD: /etc/init.d/cron
-%wheel ALL=NOPASSWD: /etc/init.d/ssh
-#%wheel ALL=NOPASSWD: /etc/init.d/mysql
-#%wheel ALL=NOPASSWD: /etc/init.d/apache2
-
-https://support.hostway.com/hc/en-us/articles/115001509750-How-To-Install-and-Configure-Sudo
+(Alpine & openSUSE Leap WSL)
+%sudo ALL=NOPASSWD: /usr/sbin/sshd
 ```
-* Modify `commands.txt` in the wsl-autostart directory to specify the service commands for your need.
+
+* Modify `commands.txt` in the wsl-autostart directory to specify the service commands for your need (Ubuntu, Debian, Kali Linux WSL).
 e.g:
 ``` shell
 /etc/init.d/cron
 /etc/init.d/ssh
-#/etc/init.d/mysql
-#/etc/init.d/apache2
+```
+
+* Modify `commandx.txt` in the wsl-autostart directory to specify the service commands for your need (Alpine & openSUSE Leap WSL).
+e.g:
+``` shellx
+/usr/sbin/sshd
 ```
 
 ## Other methods
@@ -64,3 +64,4 @@ The same `taskschd.msc` program will show a specific log regarding the execution
 * https://superuser.com/questions/1111591/how-can-i-ssh-into-bash-on-ubuntu-on-windows-10
 * https://gist.github.com/dentechy/de2be62b55cfd234681921d5a8b6be11
 * https://gist.github.com/harleyday/76a103a1a0ca97c6f33706e4a8cc3307#file-wsl-ssh-server-md
+* https://gist.github.com/dentechy/de2be62b55cfd234681921d5a8b6be11
