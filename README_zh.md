@@ -33,24 +33,14 @@ git clone https://github.com/rescenic/wsl-autostart.git
 * 修改在WSL中`/etc/sudoers`文件,为需要自启动的服务指定为免密码.
 如:
 ``` sudoers
-(Ubuntu, Debian, Kali Linux WSL)
-%sudo ALL=NOPASSWD: /etc/init.d/cron
 %sudo ALL=NOPASSWD: /etc/init.d/ssh
-
-(Alpine & openSUSE Leap WSL)
 %sudo ALL=NOPASSWD: /usr/sbin/sshd
 ```
 
 * 修改`commands.txt`文件指定需要自启动的服务 (Ubuntu, Debian, Kali Linux WSL).
 如:
 ``` shell
-/etc/init.d/cron
 /etc/init.d/ssh
-```
-
-* 修改`commandx.txt`文件指定需要自启动的服务 (Ubuntu, Debian, Kali Linux WSL). (Alpine & openSUSE Leap WSL).
-如:
-``` shellx
 /usr/sbin/sshd
 ```
 

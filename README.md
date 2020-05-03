@@ -32,24 +32,14 @@ git clone https://github.com/rescenic/wsl-autostart.git
 * Modify `/etc/sudoers` in the WSL to specify the service commands calling on startup without a password.
 e.g:
 ``` sudoers
-(Ubuntu, Debian, Kali Linux WSL)
-%sudo ALL=NOPASSWD: /etc/init.d/cron
 %sudo ALL=NOPASSWD: /etc/init.d/ssh
-
-(Alpine & openSUSE Leap WSL)
 %sudo ALL=NOPASSWD: /usr/sbin/sshd
 ```
 
 * Modify `commands.txt` in the wsl-autostart directory to specify the service commands for your need (Ubuntu, Debian, Kali Linux WSL).
 e.g:
 ``` shell
-/etc/init.d/cron
 /etc/init.d/ssh
-```
-
-* Modify `commandx.txt` in the wsl-autostart directory to specify the service commands for your need (Alpine & openSUSE Leap WSL).
-e.g:
-``` shellx
 /usr/sbin/sshd
 ```
 
