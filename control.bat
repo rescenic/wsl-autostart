@@ -34,7 +34,5 @@ goto lxssDetect
     for /f %%i in (%~dp0commands.txt) do (wsl -d Ubuntu sudo %%i %*)
     for /f %%i in (%~dp0commands.txt) do (wsl -d Debian sudo %%i %*)
     for /f %%i in (%~dp0commands.txt) do (wsl -d kali-linux sudo %%i %*)
-    for /f %%i in (%~dp0commandx.txt) do (wsl -d Alpine sudo %%i %*)
-    for /f %%i in (%~dp0commandx.txt) do (wsl -d openSUSE-Leap-15-1 sudo %%i %*)
 
 :end
